@@ -1,0 +1,21 @@
+.form {
+  display: flex;
+  gap: $gap-24;
+  flex: 1;
+
+  input {
+    flex: 1;
+  }
+}
+
+@media (max-width: $device-sm) {
+  .form {
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: $device-xs) {
+  .form {
+    flex-direction: column;
+  }
+}
