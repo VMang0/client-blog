@@ -1,0 +1,11 @@
+.navbar__list {
+  display: flex;
+  gap: $gap-24;
+  transition: .3s;
+}
+
+@media (max-width: $device-sm) {
+  .navbar__list {
+    flex-direction: column;
+  }
+}
