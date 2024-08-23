@@ -1,0 +1,41 @@
+.author_card {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: $gap-20;
+  width: $size-296;
+  padding: $space-40 $space-16;
+
+  background-color: $white-primary;
+  transition: background-color .3s ease-in;
+
+  h3 {
+    text-align: center;
+  }
+
+  img {
+    width: auto;
+    height: auto;
+    max-width: $size-128;
+  }
+
+  &:hover {
+    background-color: $yellow-tertiary;
+  }
+}
+
+.author_card__company {
+  text-align: center;
+  font-size: $font-size-14;
+}
+
+.author_card__links {
+  display: flex;
+  gap: $gap-16;
+
+  a:hover {
+    path {
+      fill: $purple-primary
+    }
+  }
+}

@@ -1,0 +1,24 @@
+.featured_post {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: $gap-16;
+
+  padding: $space-32;
+  box-sizing: border-box;
+  color: $gray-primary;
+  border: 1px solid #{$gray-tertiary}30;
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+
+  a {
+    margin-top: $space-16;
+  }
+}
+
+.featured_post__description {
+  color: $gray-tertiary;
+}

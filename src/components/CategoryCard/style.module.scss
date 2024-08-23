@@ -1,0 +1,30 @@
+.category_card {
+  display: flex;
+  align-items: flex-start;
+  gap: $gap-16;
+  padding: $space-24;
+  width: $size-296;
+
+  color: $gray-primary;
+  border: 1px solid #{$gray-tertiary}70;
+
+  transition: background-color .3s ease-in;
+
+  &:hover {
+    color: $gray-primary;
+    background-color: $yellow-primary;
+    border: 1px solid $yellow-primary;
+  }
+}
+
+.category_card_icon__wrapper {
+  padding: $space-10 $space-12;
+  background-color: $yellow-tertiary;
+
+  border-radius: $radios-10;
+}
+
+.category_card__full {
+  flex-direction: column;
+  padding: $space-32;
+}

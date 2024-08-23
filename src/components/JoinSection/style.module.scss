@@ -1,0 +1,12 @@
+.join_section {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: $gap-20;
+
+  text-align: center;
+  color: $gray-primary;
+
+  width: 100%;
+  max-width: $size-515;
+}

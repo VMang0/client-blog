@@ -1,0 +1,36 @@
+import { useTranslations } from 'next-intl';
+import { FC, memo } from 'react';
+
+import { FeaturedPost } from '@components/Post/FeaturedPost';
+import { SmallPost } from '@components/Post/SmallPost';
+import { Routes } from '@constants/routes';
+import { Link } from '@navigation';
+import { PostsPropsType } from '@type/post';
+
+import style from './style.module.scss';
+
+export const Posts: FC<PostsPropsType> = memo(({ posts }) => {
+  const trPosts = useTranslations('HomePostsSection');
+
+  return (
+    <section className={style.home_posts}>
+      <div className={style.featured_post_section}>
+        <h2>{trPosts('featuredPost')}</h2>
+        <FeaturedPost {...posts[1]} />
+      </div>
+      <div className={style.all_posts_section}>
+        <div className={style.all_posts_titles}>
+          <h2>{trPosts('allPosts')}</h2>
+          <Link href={Routes.Blog}>{trPosts('viewAll')}</Link>
+        </div>
+        <ul>
+          {posts.slice(2).map((post) => (
+            <li key={post.id}>
+              <SmallPost {...post} />
+            </li>
+          ))}
+        </ul>
+      </div>
+    </section>
+  );
+});

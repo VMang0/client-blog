@@ -1,0 +1,21 @@
+.small_post {
+  display: flex;
+  flex-direction: column;
+  gap: $gap-8;
+
+  cursor: pointer;
+  padding: $space-32;
+  color: $gray-primary;
+
+  transition: background-color .3s ease-in;
+
+  &:hover {
+    background-color: $yellow-tertiary;
+  }
+}
+
+@media (max-width: $device-md) {
+  .small_post {
+    padding: $space-16;
+  }
+}
