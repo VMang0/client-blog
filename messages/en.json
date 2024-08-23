@@ -1,0 +1,58 @@
+{
+  "Logo": {
+    "title": "Client Blog"
+  },
+  "Navbar": {
+    "home": "Home",
+    "blog": "Blog",
+    "about_us": "About us",
+    "contact_us": "Contact us",
+    "privacy_policy": "Privacy Policy"
+  },
+  "ModalVideo": {
+    "btn_title": "Video about us",
+    "title": "Watch the video about us. Enjoy watching!"
+  },
+  "SubscribeForm": {
+    "title": "Subscribe to our news letter to get latest updates and news",
+    "placeholder": "Enter Your Email",
+    "btn_title": "Subscribe"
+  },
+  "Post": {
+    "postedOn": "Posted on",
+    "by": "By",
+    "btn_title": "Read More >"
+  },
+  "HomePostsSection": {
+    "featuredPost": "Featured Post",
+    "allPosts": "All Posts",
+    "viewAll": "View All"
+  },
+  "HomeInfoSection": {
+    "about_subtitle": "About us",
+    "about_title": "We are a community of content writers who share their learnings",
+    "about_description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "link_title": "Read More >",
+    "mission_subtitle": "Our mission",
+    "mission_title": "Creating valuable content for creatives all around the world",
+    "mission_description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+  },
+  "CategoriesSection": {
+    "title": "Choose A Catagory"
+  },
+  "AuthorsSection": {
+    "title": "List of Authors"
+  },
+  "JoinSection": {
+    "title": "Join our team to be a part of our story",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.",
+    "btn_title": "Join Now"
+  },
+  "BlogPosts": {
+    "title": "All posts",
+    "Pagination": {
+      "btn_title_prev": "< Prev",
+      "btn_title_next": "Next >"
+    }
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "Logo": {
+    "title": "Client Blog"
+  },
+  "Navbar": {
+    "home": "Главная",
+    "blog": "Блог",
+    "about_us": "О нас",
+    "contact_us": "Свяжитесь с нами",
+    "privacy_policy": "Политика конфиденциальности"
+  },
+  "ModalVideo": {
+    "btn_title": "Видео о нас",
+    "title": "Посмотрите видео о нас. Приятного просмотра!"
+  },
+  "SubscribeForm": {
+    "title": "Подпишитесь на нашу рассылку, чтобы получать последние обновления и новости",
+    "placeholder": "Введите ваш email",
+    "btn_title": "Подписаться"
+  },
+  "Post": {
+    "postedOn": "Опубликовано в",
+    "by": "Автор:",
+    "btn_title": "Подробнее >"
+  },
+  "HomePostsSection": {
+    "featuredPost": "Избранный пост",
+    "allPosts": "Все посты",
+    "viewAll": "Просмотреть все"
+  },
+  "HomeInfoSection": {
+    "about_subtitle": "О нас",
+    "about_title": "Мы сообщество авторов контента, делящихся своими знаниями",
+    "about_description": "Мы объединяем талантливых авторов, чтобы создавать уникальный и полезный контент для наших читателей.",
+    "link_title": "Читать далее >",
+    "mission_subtitle": "Наша миссия",
+    "mission_title": "Создание ценного контента для творческих людей по всему миру",
+    "mission_description": "Наша цель — вдохновлять и поддерживать творческих людей, предоставляя им качественные материалы и ресурсы для развития их навыков."
+  },
+  "CategoriesSection": {
+    "title": "Выберите категорию"
+  },
+  "AuthorsSection": {
+    "title": "Список авторов"
+  },
+  "JoinSection": {
+    "title": "Присоединяйтесь к нашей команде, чтобы стать частью нашей истории",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.",
+    "btn_title": "Присоединяйтесь"
+  },
+  "BlogPosts": {
+    "title": "Все посты",
+    "Pagination": {
+      "btn_title_prev": "< Пред",
+      "btn_title_next": "След >"
+    }
+  }
+}
