@@ -1,0 +1,31 @@
+.pagination {
+  display: flex;
+  gap: $gap-16;
+
+
+}
+
+.pagination button {
+  border: none;
+  background-color: transparent;
+  transition: 0.3s;
+
+  font-weight: $font-weight-700;
+
+  &:hover:not(&:disabled) {
+    color: $yellow-secondary;
+  }
+
+  &:disabled {
+    color: #{$gray-tertiary}80;
+  }
+}
+
+.pagination_prev {
+  color: $gray-tertiary;
+  font-size: $font-size-24;
+}
+.pagination_next {
+  color: $gray-primary;
+  font-size: $font-size-28;
+}

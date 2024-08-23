@@ -1,0 +1,42 @@
+.blog_header {
+  padding: $space-80 0;
+  background-color: $purple-second;
+}
+
+.blog_header__content {
+  display: flex;
+  gap: $gap-50;
+  align-items: center;
+
+  img {
+    width: 100%;
+    height: auto;
+    max-width: $size-515;
+    object-fit: cover;
+  }
+}
+
+@media (max-width: $device-md) {
+  .blog_header {
+    padding: $space-48 0;
+  }
+
+  .blog_header__content {
+    flex-direction: column-reverse;
+
+    img {
+      object-fit: contain;
+    }
+  }
+}
+
+
+@media (max-width: $device-sm) {
+  .blog_header {
+    padding: $space-30 0;
+  }
+
+  .blog_header__content {
+    gap: $gap-20;
+  }
+}
