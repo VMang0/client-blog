@@ -1,8 +1,7 @@
 import { useTranslations } from 'next-intl';
 import { FC, memo } from 'react';
 
-import { FeaturedPost } from '@components/Post/FeaturedPost';
-import { SmallPost } from '@components/Post/SmallPost';
+import { Post } from '@components/Post';
 import { Routes } from '@constants/routes';
 import { Link } from '@navigation';
 import { PostsPropsType } from '@type/post';
@@ -16,7 +15,16 @@ export const Posts: FC<PostsPropsType> = memo(({ posts }) => {
     <section className={style.home_posts}>
       <div className={style.featured_post_section}>
         <h2>{trPosts('featuredPost')}</h2>
-        <FeaturedPost {...posts[1]} />
+        <Post
+          post={posts[1]}
+          descriptionGap="m"
+          isImageVisible
+          isAuthorVisible
+          isDescriptionVisible
+          IsButtonVisible
+          isPaddingVisible
+          isBorderVisible
+        />
       </div>
       <div className={style.all_posts_section}>
         <div className={style.all_posts_titles}>
@@ -26,7 +34,7 @@ export const Posts: FC<PostsPropsType> = memo(({ posts }) => {
         <ul>
           {posts.slice(2).map((post) => (
             <li key={post.id}>
-              <SmallPost {...post} />
+              <Post post={post} isAuthorVisible isCardLink isPaddingVisible TitleTag="h4" />
             </li>
           ))}
         </ul>

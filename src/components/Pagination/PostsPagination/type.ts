@@ -1,6 +1,6 @@
 export type PostsPaginationPropsType = {
-  onPrevClick: () => void;
-  onNextClick: () => void;
+  handlePrevClick: () => void;
+  handleNextClick: () => void;
   isPrevDisabled: boolean;
   isNextDisabled: boolean;
 };

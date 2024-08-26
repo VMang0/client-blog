@@ -27,3 +27,17 @@ export type PostPropsType = {
 export type PostsPropsType = {
   posts: PostType[];
 };
+
+export type UsePostsPaginationPropsType = {
+  initialPage?: number;
+  limit?: number;
+};
+
+export type UsePostsPaginationReturn = {
+  featuredPost: PostType | null;
+  posts: PostType[];
+  isNextDisabled: boolean;
+  isPrevDisabled: boolean;
+  handlePrevClick: () => void;
+  handleNextClick: () => void;
+};

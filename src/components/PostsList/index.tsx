@@ -1,15 +1,25 @@
 import { FC, memo } from 'react';
 
-import { BigPost } from '@components/Post/BigPost';
+import { Post } from '@components/Post';
 import { PostsPropsType } from '@type/post';
 
 import style from './style.module.scss';
 
-export const PostsList: FC<PostsPropsType & { subtitle: string }> = memo(({ posts, subtitle }) => (
+export const PostsList: FC<PostsPropsType> = memo(({ posts }) => (
   <ul className={style.post_list}>
     {posts.map((post) => (
       <li key={post.id}>
-        <BigPost {...post} subtitle={post[subtitle]} />
+        <Post
+          post={post}
+          isHorizontal
+          isImageVisible
+          isCategoryVisible
+          isDescriptionVisible
+          imageSize="s"
+          TitleTag="h2"
+          descriptionGap="m"
+          isCardLink
+        />
       </li>
     ))}
   </ul>
