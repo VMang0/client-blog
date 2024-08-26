@@ -1,0 +1,33 @@
+.square_container {
+  display: flex;
+  flex-direction: row;
+
+  width: 100%;
+  max-width: $size-1061;
+  height: $size-23;
+
+  position: absolute;
+  right: 0;
+
+  &__yellow {
+    flex: 1;
+    background-color: $yellow-primary;
+  }
+
+  &__purple {
+    width: 24%;
+    background-color: $purple-primary;
+  }
+}
+
+.reverse {
+  flex-direction: row-reverse;
+}
+
+.bottom {
+  bottom: 0;
+}
+
+.top {
+  top: -23px;
+}

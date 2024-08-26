@@ -15,3 +15,11 @@ export type AuthorType = {
   description: string;
   links: LinksType;
 };
+
+export type AuthorPropsType = {
+  author: AuthorType;
+};
+
+export type AuthorsPropsType = {
+  authors: AuthorType[];
+};
