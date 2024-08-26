@@ -1,5 +1,7 @@
-import { getLimitAuthors } from '@api/getAuthors';
-import { getLimitPosts } from '@api/getPosts';
+'use server';
+
+import { getLimitAuthors } from '@api/author/getAuthors';
+import { getLimitPosts } from '@api/post/getPosts';
 import { CommunityInfo } from '@app/[locale]/components/CommunityInfo';
 import { HeroPost } from '@app/[locale]/components/HeroPost';
 import { Posts } from '@app/[locale]/components/Posts';
@@ -17,7 +19,7 @@ const Home = async () => {
       <HeroPost post={posts[0]} />
       <Posts posts={partOfPosts} />
       <CommunityInfo />
-      <Categories />
+      <Categories titleAlign="center" />
       <Authors authors={authors} />
       <JoinSection />
     </>

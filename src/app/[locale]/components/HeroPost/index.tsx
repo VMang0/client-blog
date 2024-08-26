@@ -1,6 +1,6 @@
 import { FC, memo } from 'react';
 
-import { HeroPostInfo } from '@components/Post/HeroPostInfo';
+import { HeroPostInfo } from '@components/HeroPostInfo';
 import { PostPropsType } from '@type/post';
 
 import style from './style.module.scss';

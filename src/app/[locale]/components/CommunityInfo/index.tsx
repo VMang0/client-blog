@@ -1,6 +1,8 @@
 import Link from 'next/link';
 import { useTranslations } from 'next-intl';
 
+import { MulticoloredSquare } from '@components/MulticoloredSquare';
+
 import style from './style.module.scss';
 
 export const CommunityInfo = () => {
@@ -8,6 +10,7 @@ export const CommunityInfo = () => {
 
   return (
     <section className={style.info}>
+      <MulticoloredSquare />
       <div className={style.info_about}>
         <h6 className={style.info__subtitle}>{trInfo('about_subtitle')}</h6>
         <h2 className={style.info_about__title}>{trInfo('about_title')}</h2>

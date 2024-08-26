@@ -22,12 +22,21 @@
   }
 }
 
+.blog {
+  color: $gray-primary;
+}
+
 .home span {
   color: $yellow-primary
 }
 
-.blog {
-  color: $gray-primary;
+.author_title {
+  font-size: $font-size-14;
+  font-weight: $font-weight-500;
+
+  span {
+    color: $purple-primary;
+  }
 }
 
 @media (max-width: $device-sm) {

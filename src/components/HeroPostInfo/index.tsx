@@ -7,14 +7,13 @@ import { Routes } from '@constants/routes';
 import { PostType } from '@type/post';
 
 import style from './style.module.scss';
-import postStyle from '../style.module.scss';
 
 export const HeroPostInfo: FC<PostType & { isHomePage?: boolean }> = memo(({ isHomePage = false, ...post }) => {
   const trHeroPost = useTranslations('Post');
   const { id, title, category, author, createdAt, description } = post;
 
   const titleClassName = classNames({ 'headline-xl': isHomePage });
-  const authorClassName = classNames({ [postStyle.author_title]: !isHomePage });
+  const authorClassName = classNames({ [style.author_title]: !isHomePage });
 
   const postInfoClassName = classNames(style.hero_post__info, {
     [style.home]: isHomePage,
