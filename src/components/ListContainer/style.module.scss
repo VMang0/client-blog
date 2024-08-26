@@ -1,0 +1,27 @@
+.list_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: $gap-48;
+
+  color: $gray-primary;
+}
+
+.center {
+  align-items: center;
+}
+
+.left h2 {
+  align-items: flex-start;
+}
+
+.right {
+  align-items: flex-end;
+}
+
+
+@media (max-width: $device-sm) {
+  .list_container {
+    gap: $gap-32;
+  }
+}

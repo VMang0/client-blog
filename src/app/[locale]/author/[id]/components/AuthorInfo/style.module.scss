@@ -1,0 +1,55 @@
+.author_info__container {
+  background-color: $purple-second;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.author_info {
+  color: $gray-primary;
+  max-width: $size-1061;
+  margin-inline: auto;
+  position: relative;
+  padding: $gap-128 $gap-20;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: $gap-32;
+}
+
+.author_info__image {
+  width: 250px;
+  height: 295px;
+  overflow: hidden;
+  position: relative;
+
+  img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+}
+
+.author_info__content {
+  display: flex;
+  flex-direction: column;
+  gap: $gap-24;
+  max-width: $size-670;
+}
+
+.author_info__links {
+  display: flex;
+  flex-direction: row;
+  gap: $gap-16;
+}
+
+@media (max-width: $device-md) {
+  .author_info {
+    padding: $gap-50 $gap-20;
+  }
+}

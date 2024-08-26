@@ -1,0 +1,18 @@
+.post_list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+  gap: $gap-32;
+
+  li {
+    width: 100%;
+    max-width: $size-405;
+  }
+}
+
+@media (max-width: $device-md) {
+  .post_list {
+    justify-content: center;
+  }
+}
