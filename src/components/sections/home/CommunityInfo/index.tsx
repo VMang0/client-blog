@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import { useTranslations } from 'next-intl';
 
-import { MulticoloredSquare } from '@components/MulticoloredSquare';
+import { MulticoloredSquare } from '@components/ui/MulticoloredSquare';
 
 import style from './style.module.scss';
 

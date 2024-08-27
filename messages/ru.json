@@ -38,7 +38,8 @@
     "mission_description": "Наша цель — вдохновлять и поддерживать творческих людей, предоставляя им качественные материалы и ресурсы для развития их навыков."
   },
   "CategoriesSection": {
-    "title": "Выберите категорию"
+    "chooseACategory": "Выберите категорию",
+    "allCategories": "Все категории"
   },
   "AuthorsSection": {
     "title": "Список авторов"
@@ -53,6 +54,38 @@
     "Pagination": {
       "btn_title_prev": "< Пред",
       "btn_title_next": "След >"
+    }
+  },
+  "BlogPost": {
+    "whatToReadNext": "Что читать дальше",
+    "postedOn": "Опубликовано"
+  },
+  "AuthorPage": {
+    "hello": "Привет, я",
+    "welcome": "и добро пожаловать в мой блог",
+    "title": "Мои публикации"
+  },
+  "ContactsUs": {
+    "Heading": {
+      "subtitle": "Свяжитесь с нами",
+      "title": "Давайте начнем разговор",
+      "information": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim."
+    },
+    "ContactData": {
+      "workingHours": "Часы работы",
+      "contactUs": "Свяжитесь с нами",
+      "mondayToFriday": "С понедельника по пятницу",
+      "workTime": "с 9:00 до 20:00",
+      "supportAvailable": "Наша служба поддержки доступна круглосуточно"
+    },
+    "Form": {
+      "Placeholders": {
+        "name": "Полное имя",
+        "email": "Ваш email",
+        "queryRelated": "Касательно запроса",
+        "message": "Сообщение"
+      },
+      "btn_title": "Отправить сообщение"
     }
   }
 }

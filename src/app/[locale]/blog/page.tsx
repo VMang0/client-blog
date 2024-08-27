@@ -2,10 +2,10 @@
 
 import { useTranslations } from 'next-intl';
 
-import { BlogHeader } from '@app/[locale]/blog/components/BlogHeader';
-import { Posts } from '@app/[locale]/blog/components/Posts';
 import { Categories } from '@components/Categories';
 import { JoinSection } from '@components/JoinSection';
+import { BlogHeader } from '@components/sections/blog/BlogHeader';
+import { Posts } from '@components/sections/blog/Posts';
 import { usePostsPagination } from '@hooks/usePostsPagination';
 
 const Blog = () => {

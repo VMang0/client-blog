@@ -1,7 +1,7 @@
 import classNames from 'classnames';
 import { FC } from 'react';
 
-import { ButtonPropsType } from '@components/Button/type';
+import { ButtonPropsType } from '@components/ui/Button/type';
 
 import style from './style.module.scss';
 

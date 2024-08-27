@@ -4,10 +4,10 @@ import classNames from 'classnames';
 import { useTranslations } from 'next-intl';
 import { useState } from 'react';
 
-import { Button } from '@components/Button';
 import { BurgerBtn } from '@components/Header/components/BurgerBtn';
 import { Logo } from '@components/Logo';
 import { Navbar } from '@components/Navbar';
+import { Button } from '@components/ui/Button';
 
 import style from './style.module.scss';
 

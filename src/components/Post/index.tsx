@@ -3,8 +3,8 @@ import Image from 'next/image';
 import { useTranslations } from 'next-intl';
 import { FC } from 'react';
 
-import { ButtonLink } from '@components/Button/ButtonLink';
 import { PostPropsType } from '@components/Post/type';
+import { ButtonLink } from '@components/ui/Button/ButtonLink';
 import { Routes } from '@constants/routes';
 
 import style from './style.module.scss';

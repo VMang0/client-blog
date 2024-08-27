@@ -1,7 +1,7 @@
 import classNames from 'classnames';
 import { FC } from 'react';
 
-import { SelectPropsType } from '@components/Select/type';
+import { SelectPropsType } from '@components/ui/Select/type';
 
 import style from './style.module.scss';
 

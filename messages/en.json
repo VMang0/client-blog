@@ -38,7 +38,8 @@
     "mission_description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
   },
   "CategoriesSection": {
-    "title": "Choose A Catagory"
+    "chooseACategory": "Choose A Catagory",
+    "allCategories": "All Categories"
   },
   "AuthorsSection": {
     "title": "List of Authors"
@@ -53,6 +54,38 @@
     "Pagination": {
       "btn_title_prev": "< Prev",
       "btn_title_next": "Next >"
+    }
+  },
+  "BlogPost": {
+    "whatToReadNext": "What to read next",
+    "postedOn": "Posted on"
+  },
+  "AuthorPage": {
+    "hello": "Hey there, I’m",
+    "welcome": "and welcome to my Blog",
+    "title": "My Posts"
+  },
+  "ContactsUs": {
+    "Heading": {
+      "subtitle": "Contact us",
+      "title": "Let’s Start a Conversation",
+      "information": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim."
+    },
+    "ContactData": {
+      "workingHours": "Working hours",
+      "contactUs": "Contact Us",
+      "mondayToFriday": "Monday To Friday",
+      "workTime": "9:00 AM to 8:00 PM",
+      "supportAvailable": "Our Support Team is available 24/7"
+    },
+    "Form": {
+      "Placeholders": {
+        "name": "Full Name",
+        "email": "Your Email",
+        "queryRelated": "Query Related",
+        "message": "Message"
+      },
+      "btn_title": "Send Message"
     }
   }
 }

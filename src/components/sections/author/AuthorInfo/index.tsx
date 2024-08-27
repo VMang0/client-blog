@@ -6,7 +6,7 @@ import FacebookIcon from '@assets/icons/facebook.svg';
 import InstagramIcon from '@assets/icons/instagram.svg';
 import LinkedinIcon from '@assets/icons/linkedln.svg';
 import TwitterIcon from '@assets/icons/twitter.svg';
-import { MulticoloredSquare } from '@components/MulticoloredSquare';
+import { MulticoloredSquare } from '@components/ui/MulticoloredSquare';
 import { AuthorPropsType } from '@type/author';
 
 import style from './style.module.scss';

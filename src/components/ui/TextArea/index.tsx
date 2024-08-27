@@ -1,7 +1,7 @@
 import classNames from 'classnames';
 import { FC } from 'react';
 
-import { TextAreaPropsType } from '@components/TextArea/type';
+import { TextAreaPropsType } from '@components/ui/TextArea/type';
 
 import style from './style.module.scss';
 

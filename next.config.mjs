@@ -26,7 +26,13 @@ const nextConfig = {
     return config;
   },
   images: {
-    domains: ['client-blog-server-six.vercel.app'],
+    deviceSizes: [480, 816, 1024, 1200],
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'client-blog-server-six.vercel.app',
+      },
+    ],
   },
 }
 

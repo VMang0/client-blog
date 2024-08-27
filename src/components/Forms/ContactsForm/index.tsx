@@ -2,10 +2,10 @@
 
 import { useTranslations } from 'next-intl';
 
-import { Button } from '@components/Button';
-import { Input } from '@components/Input';
-import { Select } from '@components/Select';
-import { TextArea } from '@components/TextArea';
+import { Button } from '@components/ui/Button';
+import { Input } from '@components/ui/Input';
+import { Select } from '@components/ui/Select';
+import { TextArea } from '@components/ui/TextArea';
 import { queryOptions } from '@constants/queryOptions';
 import { useContactsForm } from '@hooks/useContactsForm';
 

@@ -1,8 +1,8 @@
 import { useTranslations } from 'next-intl';
 
-import { Divider } from '@components/Devider';
 import { PostsPagination } from '@components/Pagination/PostsPagination';
 import { PostsList } from '@components/PostsList';
+import { Divider } from '@components/ui/Devider';
 import { usePostsPagination } from '@hooks/usePostsPagination';
 
 import style from './style.module.scss';

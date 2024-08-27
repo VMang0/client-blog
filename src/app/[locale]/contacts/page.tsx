@@ -1,8 +1,8 @@
 import dynamic from 'next/dynamic';
 
-import { ContactData } from '@app/[locale]/contacts/components/ContactData';
-import { Heading } from '@app/[locale]/contacts/components/Heading';
 import { ContactsForm } from '@components/Forms/ContactsForm';
+import { ContactData } from '@components/sections/contacts/ContactData';
+import { Heading } from '@components/sections/contacts/Heading';
 
 import style from './style.module.scss';
 

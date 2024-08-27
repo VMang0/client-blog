@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import { FC } from 'react';
 
-import { AuthorInfo } from '@app/[locale]/post/[id]/components/AuthorInfo';
+import { AuthorInfo } from '@components/sections/post/AuthorInfo';
 import { PostPropsType } from '@type/post';
 
 import style from './style.module.scss';

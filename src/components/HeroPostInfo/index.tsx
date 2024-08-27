@@ -2,7 +2,7 @@ import classNames from 'classnames';
 import { useTranslations } from 'next-intl';
 import { FC, memo } from 'react';
 
-import { ButtonLink } from '@components/Button/ButtonLink';
+import { ButtonLink } from '@components/ui/Button/ButtonLink';
 import { Routes } from '@constants/routes';
 import { PostType } from '@type/post';
 

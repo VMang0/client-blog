@@ -1,7 +1,7 @@
 import classNames from 'classnames';
 import { FC } from 'react';
 
-import { ButtonLinksPropsType } from '@components/Button/ButtonLink/type';
+import { ButtonLinksPropsType } from '@components/ui/Button/ButtonLink/type';
 import { Link } from '@navigation';
 
 import style from '../style.module.scss';

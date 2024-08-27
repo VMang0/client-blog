@@ -1,7 +1,7 @@
 import classNames from 'classnames';
 import { FC } from 'react';
 
-import { InputPropsType } from '@components/Input/type';
+import { InputPropsType } from '@components/ui/Input/type';
 
 import style from './style.module.scss';
 

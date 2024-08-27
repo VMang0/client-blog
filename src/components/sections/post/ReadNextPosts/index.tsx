@@ -1,9 +1,9 @@
 import { useTranslations } from 'next-intl';
 import { FC } from 'react';
 
-import { Divider } from '@components/Devider';
 import { ListContainer } from '@components/ListContainer';
 import { Post } from '@components/Post';
+import { Divider } from '@components/ui/Devider';
 import { PostsPropsType } from '@type/post';
 
 import style from './style.module.scss';

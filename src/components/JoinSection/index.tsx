@@ -1,6 +1,6 @@
 import { useTranslations } from 'next-intl';
 
-import { ButtonLink } from '@components/Button/ButtonLink';
+import { ButtonLink } from '@components/ui/Button/ButtonLink';
 
 import style from './style.module.scss';
 
