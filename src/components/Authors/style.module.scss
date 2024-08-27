@@ -16,3 +16,9 @@
 
   gap: $gap-32;
 }
+
+@media (max-width: $device-sm) {
+  .authors__list {
+    justify-content: center;
+  }
+}

@@ -3,8 +3,9 @@ export enum Routes {
   Blog = '/blog',
   Post = '/post',
   Category = '/category',
+  Author = '/author',
 
   AboutUs = '/about_us',
-  ContactUs = '/contact_us',
+  ContactUs = '/contacts',
   PrivacyPolicy = '/privacy_policy',
 }

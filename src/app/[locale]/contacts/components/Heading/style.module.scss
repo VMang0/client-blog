@@ -1,0 +1,14 @@
+.heading {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: $gap-16;
+
+  text-align: center;
+  color: $gray-primary;
+}
+
+.subtitle {
+  font-weight: $font-weight-700;
+  text-transform: uppercase;
+}

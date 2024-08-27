@@ -1,10 +1,7 @@
 import emailjs from '@emailjs/browser';
 
 import { Env } from '@constants/env';
-
-type SubscribeOnNewsParamsType = {
-  email: string;
-};
+import { ContactsFormType } from '@type/contacts';
 
 type ResponseType = {
   status: number;
@@ -12,12 +9,17 @@ type ResponseType = {
 };
 
 const publicKey = Env.EMAILJS_PUBLIC_KEY || '';
-const subscribeTemplate = Env.EMAILJS_SUBSCRIBE_TEMPLATE_ID || '';
+const subscribeTemplate = Env.EMAILJS_CONTACTS_TEMPLATE_ID || '';
 const subscribeService = Env.EMAILJS_SERVICE_ID || '';
 
-export const subscribeOnNews = async ({ email }: SubscribeOnNewsParamsType) => {
+export const sendContactsForm = async ({ email, message, queryRelated, name }: ContactsFormType) => {
   await emailjs
-    .send(subscribeService, subscribeTemplate, { email }, publicKey)
+    .send(
+      subscribeService,
+      subscribeTemplate,
+      { from_name: name, from_email: email, query_related: queryRelated, message },
+      publicKey,
+    )
     .then((response: ResponseType) => {
       if (response.status === 200) {
         console.log('гуд');

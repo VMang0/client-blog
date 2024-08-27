@@ -1,8 +1,8 @@
-import { ReactNode } from 'react';
+import { ElementType } from 'react';
 
 export type CategoryType = {
   name: string;
   title: string;
-  Icon: ReactNode;
+  Icon: ElementType;
   description: string;
 };

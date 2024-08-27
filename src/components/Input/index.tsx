@@ -9,7 +9,6 @@ export const Input: FC<InputPropsType> = ({ dark = false, size = 'medium', isErr
   const inputClassName = classNames(style.input, {
     [style.input__dark]: dark,
     [style.error]: isError,
-    [style.small]: size === 'small',
     [style.medium]: size === 'medium',
     [style.large]: size === 'large',
   });
