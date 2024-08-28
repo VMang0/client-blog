@@ -2,7 +2,7 @@ import Image from 'next/image';
 import { useTranslations } from 'next-intl';
 import { FC } from 'react';
 
-import { AuthorInfoPropsType } from '@app/[locale]/author/[id]/components/AuthorInfo/type';
+import { AuthorInfoPropsType } from '@components/sections/author/AuthorInfo/type';
 
 import style from './style.module.scss';
 

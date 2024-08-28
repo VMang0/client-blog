@@ -1,0 +1,35 @@
+.control_panel,
+.control_panel__block,
+.control_panel__categories {
+  display: flex;
+  flex-direction: column;
+}
+
+.control_panel {
+  gap: $gap-48;
+  color: $gray-primary;
+}
+
+.control_panel__block {
+  gap: $gap-32;
+}
+
+.control_panel__tags {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: $gap-16;
+
+  max-width: $size-296;
+}
+
+.control_panel__categories {
+  gap: $gap-24;
+}
+
+@media (max-width: $device-md) {
+  .control_panel__tags {
+    justify-content: space-between;
+    max-width: none;
+  }
+}

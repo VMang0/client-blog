@@ -1,14 +1,18 @@
 .category_card {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   gap: $gap-16;
   padding: $space-24;
-  width: $size-296;
+  width: 100%;
 
   color: $gray-primary;
   border: 1px solid #{$gray-tertiary}70;
 
   transition: background-color .3s ease-in;
+
+  &__active {
+    background-color: $yellow-primary;
+  }
 
   &:hover {
     color: $gray-primary;
@@ -25,6 +29,7 @@
 }
 
 .category_card__full {
+  align-items: flex-start;
   flex-direction: column;
   padding: $space-32;
 }

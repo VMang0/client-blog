@@ -5,6 +5,10 @@
   width: 100%;
 
   gap: $gap-32;
+
+  li {
+    width: $size-296;
+  }
 }
 
 @media (max-width: $device-sm) {

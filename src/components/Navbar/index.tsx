@@ -1,9 +1,9 @@
-import Link from 'next/link';
 import { useTranslations } from 'next-intl';
 import { FC } from 'react';
 
 import { NavbarPropsType } from '@components/Navbar/types';
 import { NavLinks } from '@constants/navLinks';
+import { Link } from '@navigation';
 
 import style from './style.module.scss';
 

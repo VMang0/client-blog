@@ -6,4 +6,5 @@ export type ButtonPropsType = {
   type?: 'submit' | 'button';
   styleType: 'primary' | 'secondary';
   disabled?: boolean;
+  size?: 'small' | 'medium';
 };

@@ -28,4 +28,4 @@ export const Categories = [
     Icon: TechnologyIcon,
     description: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit.',
   },
-];
+] as const;

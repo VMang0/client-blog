@@ -1,17 +1,18 @@
 import classNames from 'classnames';
-import Link from 'next/link';
 import { FC } from 'react';
 
 import { CategoryCardPropsType } from '@components/CategoryCard/types';
 import { Routes } from '@constants/routes';
+import { Link } from '@navigation';
 
 import style from './style.module.scss';
 
-export const CategoryCard: FC<CategoryCardPropsType> = ({ category, full = false }) => {
+export const CategoryCard: FC<CategoryCardPropsType> = ({ category, full = false, isActive = false }) => {
   const { title, Icon, description, name } = category;
 
   const categoryClassName = classNames(style.category_card, {
     [style.category_card__full]: full,
+    [style.category_card__active]: isActive,
   });
 
   return (

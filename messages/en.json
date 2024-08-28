@@ -87,5 +87,13 @@
       },
       "btn_title": "Send Message"
     }
+  },
+  "Category": {
+    "categoriesTitle": "Categories",
+    "tagsTitle": "All Tags",
+    "Input": {
+      "placeholder": "Search for tag...",
+      "btn_title": "Search"
+    }
   }
 }

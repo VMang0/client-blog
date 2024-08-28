@@ -1,4 +1,6 @@
-export const queryOptions = [
+import { QueryOption } from '@type/contacts';
+
+export const queryOptions: QueryOption[] = [
   { value: 'support', label: 'Technical Support' },
   { value: 'feedback', label: 'Feedback' },
   { value: 'general', label: 'General Inquiry' },

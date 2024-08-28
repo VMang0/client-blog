@@ -1,7 +1,7 @@
 import { useTranslations } from 'next-intl';
 import { FC } from 'react';
 
-import { PostsPaginationPropsType } from '@components/Pagination/PostsPagination/type';
+import { PostsPaginationPropsType } from '@components/PostsPagination/type';
 
 import style from './style.module.scss';
 

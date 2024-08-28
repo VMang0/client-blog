@@ -1,7 +1,7 @@
 import { useTranslations } from 'next-intl';
 
-import { PostsPagination } from '@components/Pagination/PostsPagination';
 import { PostsList } from '@components/PostsList';
+import { PostsPagination } from '@components/PostsPagination';
 import { Divider } from '@components/ui/Devider';
 import { usePostsPagination } from '@hooks/usePostsPagination';
 

@@ -87,5 +87,13 @@
       },
       "btn_title": "Отправить сообщение"
     }
+  },
+  "Category": {
+    "categoriesTitle": "Категории",
+    "tagsTitle": "Все теги",
+    "Input": {
+      "placeholder": "Найти по тегу...",
+      "btn_title": "Поиск"
+    }
   }
 }

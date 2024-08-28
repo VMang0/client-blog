@@ -8,6 +8,11 @@
   transition: background-color 0.2s ease-in;
 }
 
+.small {
+  padding: $space-16;
+  font-size: $font-size-16;
+}
+
 .primary {
   color: $gray-primary;
   background-color: $yellow-primary;

@@ -11,10 +11,12 @@ export const Button: FC<ButtonPropsType> = ({
   type = 'button',
   styleType = 'primary',
   disabled = false,
+  size = 'medium',
 }) => {
   const buttonClassName = classNames(style.button, {
     [style.primary]: styleType === 'primary',
     [style.secondary]: styleType === 'secondary',
+    [style.small]: size === 'small',
   });
 
   return (

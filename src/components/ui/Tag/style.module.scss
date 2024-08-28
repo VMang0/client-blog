@@ -1,0 +1,22 @@
+.tag {
+  cursor: pointer;
+  background-color: transparent;
+  color: $gray-tertiary;
+  border: 2px solid $gray-tertiary;
+  border-radius: $radios-28;
+  padding: $space-10 $space-32;
+
+  font-weight: $font-weight-700;
+  font-size: $font-size-14;
+
+  transition: .3s;
+
+  &:hover {
+    background-color: $yellow-tertiary;
+  }
+}
+
+.active {
+  border-color: $yellow-primary;
+  color: $yellow-primary;
+}
