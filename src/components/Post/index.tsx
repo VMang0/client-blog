@@ -5,7 +5,9 @@ import { FC } from 'react';
 
 import { PostPropsType } from '@components/Post/type';
 import { ButtonLink } from '@components/ui/Button/ButtonLink';
+import { Env } from '@constants/env';
 import { Routes } from '@constants/routes';
+import { Link } from '@navigation';
 
 import style from './style.module.scss';
 
@@ -42,12 +44,12 @@ export const Post: FC<PostPropsType> = ({
     [style[`image_${imageSize}`]]: imageSize,
   });
 
-  return (
+  const content = (
     <article className={postClassName}>
       {isImageVisible && (
         <div className={postImageClassName}>
           <Image
-            src={`https://client-blog-server-six.vercel.app${img}`}
+            src={`${Env.SERVER_API}${img}`}
             alt={title}
             width={300}
             height={300}
@@ -70,5 +72,13 @@ export const Post: FC<PostPropsType> = ({
         )}
       </div>
     </article>
+  );
+
+  return isCardLink ? (
+    <Link href={`${Routes.Post}/${id}`} className={style.post_link}>
+      {content}
+    </Link>
+  ) : (
+    content
   );
 };

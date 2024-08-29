@@ -1,5 +1,3 @@
-'use server';
-
 import Image from 'next/image';
 import Link from 'next/link';
 import { FC } from 'react';
@@ -8,6 +6,7 @@ import FacebookIcon from '@assets/icons/facebook.svg';
 import InstagramIcon from '@assets/icons/instagram.svg';
 import LinkedinIcon from '@assets/icons/linkedln.svg';
 import TwitterIcon from '@assets/icons/twitter.svg';
+import { Env } from '@constants/env';
 import { Routes } from '@constants/routes';
 import { Link as LinkLocalized } from '@navigation';
 import { AuthorType } from '@type/author';
@@ -21,14 +20,9 @@ export const AuthorCard: FC<AuthorType> = ({ ...author }) => {
   return (
     <article className={style.author_card}>
       <LinkLocalized href={`${Routes.Author}/${id}`} className={style.author_card__link} />
-      <Image
-        src={`https://client-blog-server-six.vercel.app${image}`}
-        alt={name}
-        width={0}
-        height={0}
-        sizes="100%"
-        priority
-      />
+      <div className={style.author_image}>
+        <Image src={`${Env.SERVER_API}${image}`} alt={name} width={128} height={128} />
+      </div>
       <div>
         <h3>{name}</h3>
         <p className={style.author_card__company}>

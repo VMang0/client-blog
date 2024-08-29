@@ -1,7 +1,8 @@
-import Link from 'next/link';
 import { useTranslations } from 'next-intl';
 
 import { MulticoloredSquare } from '@components/ui/MulticoloredSquare';
+import { Routes } from '@constants/routes';
+import { Link } from '@navigation';
 
 import style from './style.module.scss';
 
@@ -15,7 +16,7 @@ export const CommunityInfo = () => {
         <h6 className={style.info__subtitle}>{trInfo('about_subtitle')}</h6>
         <h2 className={style.info_about__title}>{trInfo('about_title')}</h2>
         <p className={style.info__description}>{trInfo('about_description')}</p>
-        <Link className={style.info_about__link} href="/">
+        <Link className={style.info_about__link} href={Routes.AboutUs}>
           {trInfo('link_title')}
         </Link>
       </div>

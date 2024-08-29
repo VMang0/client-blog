@@ -1,6 +1,6 @@
 import { useEffect } from 'react';
 
-export const useBodyOverflow = (isHidden: boolean) => {
+export const useBodyOverflow = (isHidden: boolean = false) => {
   const setBodyOverflow = (body: HTMLElement | null, isHidden: boolean) => {
     if (body) {
       body.style.overflow = isHidden ? 'hidden' : 'auto';

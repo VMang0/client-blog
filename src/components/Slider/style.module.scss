@@ -1,6 +1,6 @@
 .slider_container {
   position: relative;
-  width: 100%;
+  overflow: hidden;
 }
 
 .slider_control {
@@ -25,41 +25,23 @@
   display: flex;
   height: 100%;
   transition: transform 0.5s ease;
+
+  &__first {
+    transform: translateX(0);
+  }
+
+  &__second {
+    transform: translateX(-100%);
+  }
+
+  &__third {
+    transform: translateX(-200%);
+  }
 }
 
 .slide {
   min-height: 100%;
   min-width: 100%;
-}
-
-.control_btn {
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 50%;
-  border: none;
-  transition: .3s;
-
-  &:hover {
-    background-color: $yellow-secondary;
-  }
-
-  &:disabled {
-    opacity: 0;
-  }
-}
-
-.prev_btn {
-  width: 48px;
-  height: 48px;
-  background-color: $white-secondary;
-}
-
-.next_next {
-  width: 64px;
-  height: 64px;
-  background-color: $gray-primary;
 }
 
 

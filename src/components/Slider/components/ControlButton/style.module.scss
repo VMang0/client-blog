@@ -1,0 +1,31 @@
+.control_btn {
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: none;
+  border-radius: 50%;
+  transition: .3s;
+
+  &:hover {
+    background-color: $yellow-secondary;
+  }
+
+  &:disabled {
+    opacity: 0;
+  }
+}
+
+.prev_btn {
+  width: 48px;
+  height: 48px;
+  background-color: $white-secondary;
+}
+
+.next_btn{
+  width: 64px;
+  height: 64px;
+  background-color: $gray-primary;
+}

@@ -6,7 +6,7 @@ import { Button } from '@components/ui/Button';
 
 import style from '../../style.module.scss';
 
-export const VideoButton = memo(({ handleClick }) => {
+export const VideoButton = memo(({ handleClick }: { handleClick: () => void }) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const trButton = useTranslations('ModalVideo');
 

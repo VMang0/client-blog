@@ -1,0 +1,31 @@
+.author_info {
+  display: flex;
+  align-items: center;
+  gap: $gap-16;
+}
+
+.author_info__image {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  overflow: hidden;
+  position: relative;
+
+  img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+}
+
+.author_info__content {
+  display: flex;
+  flex-direction: column;
+  
+  p {
+    color: $gray-tertiary;
+  }
+}
