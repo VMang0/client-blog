@@ -28,6 +28,11 @@ $header_height: 56px;
   flex-direction: row;
 }
 
+.video_frame {
+  width: 100%;
+  height: 100%;
+}
+
 @media (max-width: $device-sm) {
   .header__nav {
     right: 0;

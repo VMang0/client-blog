@@ -28,6 +28,7 @@ const RootLayout: FC<RootLayoutPropsType> = async ({ children, params: { locale 
             <Footer />
           </div>
         </NextIntlClientProvider>
+        <div id="modal" />
       </body>
     </html>
   );

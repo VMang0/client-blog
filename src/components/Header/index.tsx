@@ -1,25 +1,27 @@
 'use client';
 
 import classNames from 'classnames';
-import { useTranslations } from 'next-intl';
-import { useState } from 'react';
+import { useCallback, useState } from 'react';
 
-import { BurgerBtn } from '@components/Header/components/BurgerBtn';
+import { BurgerButton } from '@components/Header/components/BurgerButton';
+import { VideoButton } from '@components/Header/components/VideoButton';
 import { Logo } from '@components/Logo';
 import { Navbar } from '@components/Navbar';
-import { Button } from '@components/ui/Button';
 
 import style from './style.module.scss';
 
 export const Header = () => {
   const [isSideMenuOpened, setIsSideMenuOpened] = useState(false);
-  const trButton = useTranslations('ModalVideo');
 
   const NavbarClassName = classNames(style.header__nav, {
     [style.header__nav_visible]: isSideMenuOpened,
   });
 
   const handleOpen = () => setIsSideMenuOpened((prevState) => !prevState);
+
+  const handleVideoButtonClick = useCallback(() => {
+    if (isSideMenuOpened) setIsSideMenuOpened(false);
+  }, [isSideMenuOpened]);
 
   return (
     <header className={style.header}>
@@ -29,9 +31,9 @@ export const Header = () => {
         </div>
         <div className={NavbarClassName}>
           <Navbar />
-          <Button title={trButton('btn_title')} styleType="secondary" onClick={() => {}} />
+          <VideoButton handleClick={handleVideoButtonClick} />
         </div>
-        <BurgerBtn isOpened={isSideMenuOpened} handleOpen={handleOpen} />
+        <BurgerButton isOpened={isSideMenuOpened} handleOpen={handleOpen} />
       </div>
     </header>
   );
