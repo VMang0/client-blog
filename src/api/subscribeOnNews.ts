@@ -20,7 +20,7 @@ export const subscribeOnNews = async ({ email }: SubscribeOnNewsParamsType) => {
     .send(subscribeService, subscribeTemplate, { email }, publicKey)
     .then((response: ResponseType) => {
       if (response.status === 200) {
-        console.log('гуд');
+        /* empty */
       }
     })
     .catch((e: ResponseType) => {

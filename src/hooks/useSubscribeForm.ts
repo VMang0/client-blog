@@ -14,7 +14,9 @@ export const useSubscribeForm = () => {
         await subscribeOnNews(values);
         resetForm();
       } catch (error) {
-        console.error(error);
+        if (error instanceof Error) {
+          throw new Error(error.message);
+        }
       } finally {
         setSubmitting(false);
       }

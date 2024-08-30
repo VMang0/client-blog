@@ -22,7 +22,7 @@ export const sendContactsForm = async ({ email, message, queryRelated, name }: C
     )
     .then((response: ResponseType) => {
       if (response.status === 200) {
-        console.log('гуд');
+        /* empty */
       }
     })
     .catch((e: ResponseType) => {

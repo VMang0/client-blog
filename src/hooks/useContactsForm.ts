@@ -20,8 +20,10 @@ export const useContactsForm = () => {
       try {
         await sendContactsForm(values);
         resetForm();
-      } catch (error) {
-        console.error(error);
+      } catch (error: unknown) {
+        if (error instanceof Error) {
+          throw new Error(error.message);
+        }
       } finally {
         setSubmitting(false);
       }
