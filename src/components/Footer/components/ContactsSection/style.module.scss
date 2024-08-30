@@ -1,0 +1,25 @@
+.contacts {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: $gap-24;
+
+  color: $gray-tertiary;
+}
+
+.contacts__links {
+  display: flex;
+  gap: $gap-24;
+
+  svg {
+    path {
+      fill: $gray-tertiary;
+    }
+
+    &:hover {
+      path {
+        fill: $yellow-secondary;
+      }
+    }
+  }
+}

@@ -1,0 +1,34 @@
+.elastic_search {
+  position: relative;
+}
+
+.input_wrapper {
+  display: flex;
+
+  input {
+    flex: 1;
+  }
+}
+
+.search_result {
+  display: flex;
+  justify-content: center;
+
+  position: absolute;
+  top: 110%;
+  left: 0;
+  width: 100%;
+
+  border: 2px solid $yellow-primary;
+  background-color: $yellow-tertiary;
+  border-radius: 5px;
+  padding: $space-10;
+
+  z-index: 1;
+
+  ul {
+    display: flex;
+    flex-direction: column;
+    gap: $gap-16;
+  }
+}

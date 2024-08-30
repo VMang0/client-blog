@@ -1,0 +1,22 @@
+.footer {
+  margin-top: auto;
+  width: 100%;
+  background-color: $gray-primary;
+}
+
+.footer__container {
+  display: flex;
+  flex-direction: column;
+  gap: $gap-50;
+  max-width: $size-1440;
+  width: 90%;
+  margin: 0 auto;
+
+  padding: $space-59 0;
+}
+
+@media (max-width: $device-sm) {
+  .footer__container {
+    padding: $space-30 0;
+  }
+}

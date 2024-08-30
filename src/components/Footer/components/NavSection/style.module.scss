@@ -1,0 +1,14 @@
+.navigation__section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: $gap-24;
+}
+
+@media (max-width: $device-sm) {
+  .navigation__section {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,12 @@
+.posts_section {
+  display: flex;
+  flex-direction: column;
+  color: $gray-primary;
+}
+
+.posts_section__list {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: $gap-64;
+}

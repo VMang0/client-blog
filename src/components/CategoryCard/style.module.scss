@@ -1,0 +1,35 @@
+.category_card {
+  display: flex;
+  align-items: center;
+  gap: $gap-16;
+  padding: $space-24;
+  width: 100%;
+
+  color: $gray-primary;
+  border: 1px solid #{$gray-tertiary}70;
+
+  transition: background-color .3s ease-in;
+
+  &__active {
+    background-color: $yellow-primary;
+  }
+
+  &:hover {
+    color: $gray-primary;
+    background-color: $yellow-primary;
+    border: 1px solid $yellow-primary;
+  }
+}
+
+.category_card_icon__wrapper {
+  padding: $space-10 $space-12;
+  background-color: $yellow-tertiary;
+
+  border-radius: $radios-10;
+}
+
+.category_card__full {
+  align-items: flex-start;
+  flex-direction: column;
+  padding: $space-32;
+}

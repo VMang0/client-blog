@@ -1,0 +1,18 @@
+.categories__list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+
+  gap: $gap-32;
+
+  li {
+    width: $size-296;
+  }
+}
+
+@media (max-width: $device-sm) {
+  .categories__list {
+    justify-content: center;
+  }
+}

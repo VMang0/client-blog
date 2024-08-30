@@ -1,0 +1,39 @@
+.button {
+  border: none;
+  cursor: pointer;
+  padding: $space-16 $space-48;
+
+  font-size: $font-size-18;
+  font-weight: $font-weight-700;
+
+  transition: background-color 0.2s ease-in;
+
+  &:disabled {
+    cursor: not-allowed;
+    background-color: $yellow-secondary;
+  }
+}
+
+.small {
+  padding: $space-16;
+  font-size: $font-size-16;
+}
+
+.primary {
+  color: $gray-primary;
+  background-color: $yellow-primary;
+
+  &:hover {
+    color: $gray-primary;
+    background-color: $yellow-secondary;
+  }
+}
+
+.secondary {
+  color: $gray-primary;
+  background-color: $white-secondary;
+
+  &:hover {
+    background-color: $yellow-secondary;
+  }
+}

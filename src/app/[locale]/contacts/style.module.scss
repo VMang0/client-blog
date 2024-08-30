@@ -1,0 +1,8 @@
+.contacts_section {
+  display: flex;
+  flex-direction: column;
+  gap: $gap-64;
+  max-width: $size-800;
+
+  padding-top: $size-128;
+}

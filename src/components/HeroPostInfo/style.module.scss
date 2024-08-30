@@ -1,0 +1,46 @@
+.hero_post__info {
+  width: 100%;
+  max-width: $size-800;
+
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: $gap-24;
+
+  a {
+    margin-top: $space-24;
+  }
+}
+
+.hero_post__subtitle {
+  font-weight: $font-weight-500;
+  text-transform: uppercase;
+  letter-spacing: 0.19em;
+
+  span {
+    font-weight: $font-weight-700;
+  }
+}
+
+.blog {
+  color: $gray-primary;
+}
+
+.home span {
+  color: $yellow-primary
+}
+
+.author_title {
+  font-size: $font-size-14;
+  font-weight: $font-weight-500;
+
+  span {
+    color: $purple-primary;
+  }
+}
+
+@media (max-width: $device-sm) {
+  .hero_post {
+    padding: $space-50 0;
+  }
+}

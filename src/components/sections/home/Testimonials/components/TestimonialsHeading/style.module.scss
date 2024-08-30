@@ -1,0 +1,11 @@
+.testimonials_heading {
+  display: flex;
+  flex-direction: column;
+  gap: $gap-16;
+  min-width: $size-296;
+
+  h6 {
+    letter-spacing: 0.19em;
+    text-transform: uppercase;
+  }
+}

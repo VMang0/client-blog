@@ -1,0 +1,20 @@
+.textarea {
+  outline: none;
+  border-radius: $radios-2;
+  border: 1px solid #{$gray-tertiary}80;
+
+  background-color: transparent;
+  font-size: $font-size-16;
+  color: $gray-primary;
+
+  padding: $space-24;
+  resize: none;
+
+  &:focus {
+    border-color: $yellow-primary;
+  }
+}
+
+.error {
+  border-color: $red-primary;
+}

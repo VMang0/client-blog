@@ -1,0 +1,35 @@
+.overview_container {
+  position: relative;
+  width: 100%;
+}
+
+.overview_image {
+  vertical-align: middle;
+  width: 100%;
+  height: auto;
+}
+
+.statistics {
+  display: flex;
+  gap: $gap-64;
+  position: absolute;
+  background-color: $yellow-primary;
+  z-index: 1;
+  bottom: $space-23;
+  left: 20%;
+  padding: $space-32 $space-64;
+}
+
+@media (max-width: $device-md) {
+  .statistics {
+    gap: $gap-32;
+    left: 10%;
+    padding: $space-32;
+  }
+}
+
+@media (max-width: $device-sm) {
+  .statistics {
+    display: none;
+  }
+}

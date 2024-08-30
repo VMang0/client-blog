@@ -1,0 +1,24 @@
+.authors {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  gap: $gap-48;
+
+  color: $gray-primary;
+}
+
+.authors__list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+
+  gap: $gap-32;
+}
+
+@media (max-width: $device-sm) {
+  .authors__list {
+    justify-content: center;
+  }
+}

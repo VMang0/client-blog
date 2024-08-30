@@ -1,0 +1,30 @@
+.input {
+  border-radius: $radios-2;
+
+  background-color: transparent;
+  font-size: $font-size-16;
+  color: $gray-primary;
+  border: 1px solid #{$gray-tertiary}80;
+  outline: none;
+
+  &:focus {
+    border-color: $yellow-primary;
+  }
+}
+
+.input__dark {
+  color: $gray-tertiary;
+  border-color: $gray-secondary;
+}
+
+.error {
+  border-color: $red-primary;
+}
+
+.medium {
+  padding: $space-14 $space-24;
+}
+
+.large {
+  padding: $space-24;
+}

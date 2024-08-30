@@ -1,0 +1,20 @@
+.category_header {
+  padding: $space-80 0;
+  background-color: $purple-second;
+  color: $gray-primary;
+}
+
+.category_header__content {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  gap: $gap-16;
+  margin-inline: auto;
+  max-width: $size-515;
+}
+
+.category_header__subtitle {
+  text-transform: uppercase;
+  letter-spacing: 0.19em;
+}
