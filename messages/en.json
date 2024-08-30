@@ -37,6 +37,21 @@
     "mission_title": "Creating valuable content for creatives all around the world",
     "mission_description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
   },
+  "WhyStartedSection": {
+    "title": "It started out as a simple idea and evolved into our passion",
+    "subtitle": "Why we started ",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.",
+    "btn_title": "Discover our story >"
+  },
+  "FeaturedSection": {
+    "title": "Featured in",
+    "subtitle": "We are"
+  },
+  "TestimonialsSection": {
+    "title": "What people say about our blog",
+    "subtitle": "Testimonials",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor."
+  },
   "CategoriesSection": {
     "chooseACategory": "Choose A Catagory",
     "allCategories": "All Categories"
@@ -86,6 +101,34 @@
         "message": "Message"
       },
       "btn_title": "Send Message"
+    }
+  },
+  "AboutUs": {
+    "Heading": {
+      "title": "We are a team of content writers who share their learnings",
+      "subtitle": "ABOUT US",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+    },
+    "Overview": {
+      "blogsPublished": "Blogs Published",
+      "views": "Views on Finsweet",
+      "totalUsers": "Total active Users"
+    },
+    "Community": {
+      "subtitle_mission": "Our mission",
+      "title_mission": "Creating valuable content for creatives all around the world",
+      "description_mission": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non blandit massa enim nec. Scelerisque viverra mauris in aliquam sem. At risus viverra adipiscing at in tellus.",
+      "subtitle_vision": "Our mision",
+      "title_vision": "A platform that empowers individuals to improve",
+      "description_vision": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non blandit massa enim nec. Scelerisque viverra mauris in aliquam sem. At risus viverra adipiscing at in tellus."
+    },
+    "Details": {
+      "title_1": "Our team of creatives",
+      "subtitle_1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.",
+      "description_1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat.",
+      "title_2": "Why we started this Blog",
+      "subtitle_2": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.",
+      "description_2": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat."
     }
   },
   "Category": {
