@@ -1,5 +1,7 @@
-export const getLimitAuthors = async (limit = 4) => {
-  const response = await fetch(`https://client-blog-server-six.vercel.app/api/authors?_limit=${limit}`);
+import { Env } from '@constants/env';
+
+export const getLimitAuthors = async (limit = 4, locale = 'en') => {
+  const response = await fetch(`${Env.SERVER_API}/api/authors?_limit=${limit}&locale=${locale}`);
   if (!response.ok) {
     throw new Error('Failed to fetch authors');
   }

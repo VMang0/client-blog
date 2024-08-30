@@ -1,0 +1,16 @@
+.switcher {
+  display: flex;
+  align-items: center;
+  gap: $gap-16;
+
+  button {
+    color: $white-secondary;
+    font-size: $font-size-16;
+    background-color: transparent;
+    border: none;
+
+    &:disabled {
+      color: $yellow-primary;
+    }
+  }
+}

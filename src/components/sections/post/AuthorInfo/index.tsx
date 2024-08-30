@@ -3,6 +3,7 @@ import { useTranslations } from 'next-intl';
 import { FC } from 'react';
 
 import { AuthorInfoPropsType } from '@components/sections/author/AuthorInfo/type';
+import { Env } from '@constants/env';
 
 import style from './style.module.scss';
 
@@ -13,7 +14,7 @@ export const AuthorInfo: FC<AuthorInfoPropsType> = ({ img, name, createdAt }) =>
     <article className={style.author_info}>
       <div className={style.author_info__image}>
         <Image
-          src={`https://client-blog-server-six.vercel.app${img}`}
+          src={`${Env.SERVER_API}${img}`}
           alt={name}
           width={60}
           height={60}

@@ -5,7 +5,7 @@ export enum Routes {
   Category = '/category',
   Author = '/author',
 
-  AboutUs = '/about_us',
+  AboutUs = '/about',
   ContactUs = '/contacts',
-  PrivacyPolicy = '/privacy_policy',
+  PrivacyPolicy = '/privacy',
 }

@@ -1,5 +1,3 @@
-import { getLimitAuthors } from '@api/author/getAuthors';
-import { getLimitPosts } from '@api/post/getPosts';
 import { Authors } from '@components/Authors';
 import { Categories } from '@components/Categories';
 import { InfiniteScroll } from '@components/InfiniteScroll';
@@ -10,10 +8,14 @@ import { HeroPost } from '@components/sections/home/HeroPost';
 import { Posts } from '@components/sections/home/Posts';
 import { Testimonials } from '@components/sections/home/Testimonials';
 import { WhyWeStarted } from '@components/sections/home/WhyWeStarted';
+import { useApiWithLocale } from '@hooks/useApiWithLocale';
+import { LocaleParamsPropsType } from '@type/params';
 
-const Home = async () => {
-  const posts = await getLimitPosts(6);
-  const authors = await getLimitAuthors(4);
+const Home = async ({ params: { locale } }: LocaleParamsPropsType) => {
+  const { fetchLimitPosts, fetchLimitAuthors } = useApiWithLocale(locale);
+
+  const posts = await fetchLimitPosts(6);
+  const authors = await fetchLimitAuthors(4);
   const partOfPosts = posts.slice(0, 6);
 
   return (

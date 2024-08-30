@@ -1,0 +1,8 @@
+.privacy_content {
+  display: flex;
+  flex-direction: column;
+  gap: $gap-32;
+
+  max-width: $size-800;
+  color: $gray-primary;
+}

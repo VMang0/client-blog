@@ -4,8 +4,8 @@ import { useFilterPosts } from '@hooks/useFilterPosts';
 
 import style from './style.module.scss';
 
-export const CategorySection = () => {
-  const { posts, activeTag, onTagClick, category } = useFilterPosts();
+export const CategorySection = ({ locale }: { locale: string }) => {
+  const { posts, activeTag, onTagClick, category } = useFilterPosts(locale);
 
   return (
     <section className={style.category_section}>

@@ -27,6 +27,7 @@ export const Post: FC<PostPropsType> = ({
   isBorderVisible = false,
 }) => {
   const trPost = useTranslations('Post');
+  const trCategory = useTranslations('Categories');
   const { id, title, description, img, author, createdAt, category } = post;
 
   const postClassName = classNames(style.post_card, {
@@ -64,7 +65,7 @@ export const Post: FC<PostPropsType> = ({
             {trPost('by')} <span>{author.name}</span> | {createdAt}
           </p>
         )}
-        {isCategoryVisible && <h6 className={style.post_card__subtitle_category}>{category}</h6>}
+        {isCategoryVisible && <h6 className={style.post_card__subtitle_category}>{trCategory(category)}</h6>}
         <TitleTag>{title}</TitleTag>
         {isDescriptionVisible && <p className={style.post_card__description}>{description}</p>}
         {IsButtonVisible && (

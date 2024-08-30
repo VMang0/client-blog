@@ -31,6 +31,7 @@ export type PostsPropsType = {
 export type UsePostsPaginationPropsType = {
   initialPage?: number;
   limit?: number;
+  locale: string;
 };
 
 export type UsePostsPaginationReturn = {

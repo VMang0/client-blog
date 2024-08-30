@@ -15,7 +15,7 @@ export const SearchResult: FC<SearchResultPropsType> = ({ isLoading, posts, isSe
       {isPostsExist && (
         <ul>
           {posts.map((post) => (
-            <Post key={post.id} post={post} TitleTag="h6" isAuthorVisible />
+            <Post key={post.id} post={post} TitleTag="h6" isAuthorVisible isCardLink />
           ))}
         </ul>
       )}

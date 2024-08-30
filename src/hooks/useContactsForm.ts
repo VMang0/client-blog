@@ -1,11 +1,13 @@
 import { useFormik } from 'formik';
 
 import { sendContactsForm } from '@api/contacts/sendContactsForm';
-import { contactsValidationSchema } from '@components/Forms/ContactsForm/schema';
 import { queryOptions } from '@constants/queryOptions';
+import { useContactsValidationSchema } from '@hooks/useContactsValidationSchema';
 import { ContactsFormType } from '@type/contacts';
 
 export const useContactsForm = () => {
+  const validationSchema = useContactsValidationSchema();
+
   const formik = useFormik<ContactsFormType>({
     initialValues: {
       name: '',
@@ -13,7 +15,7 @@ export const useContactsForm = () => {
       queryRelated: queryOptions[0].value,
       message: '',
     },
-    validationSchema: contactsValidationSchema,
+    validationSchema,
     onSubmit: async (values, { setSubmitting, resetForm }) => {
       try {
         await sendContactsForm(values);

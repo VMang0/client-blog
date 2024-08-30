@@ -1,0 +1,26 @@
+.privacy_header {
+  padding: $space-80 0;
+  background-color: $purple-second;
+
+  color: $gray-primary
+}
+
+.privacy_header_content {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: $gap-16;
+}
+
+@media (max-width: $device-md) {
+  .privacy_header {
+    padding: $space-48 0;
+  }
+}
+
+
+@media (max-width: $device-sm) {
+  .privacy_header {
+    padding: $space-30 0;
+  }
+}

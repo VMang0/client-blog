@@ -1,5 +1,7 @@
-export const getLimitPosts = async (limit = 6, offset = 0) => {
-  const response = await fetch(`https://client-blog-server-six.vercel.app/api/posts?_limit=${limit}&_start=${offset}`);
+import { Env } from '@constants/env';
+
+export const getLimitPosts = async (limit = 6, offset = 0, locale = 'en') => {
+  const response = await fetch(`${Env.SERVER_API}/api/posts?_limit=${limit}&_start=${offset}&locale=${locale}`);
 
   if (!response.ok) {
     throw new Error('Failed to fetch posts');

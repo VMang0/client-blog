@@ -100,9 +100,21 @@
         "queryRelated": "Query Related",
         "message": "Message"
       },
+      "Validation": {
+        "required": "{field} is required",
+        "email": "Invalid {field} address",
+        "oneOf": "Invalid selection for {field}"
+      },
+      "Fields": {
+        "name": "Name",
+        "email": "Email",
+        "queryRelated": "Query Related",
+        "message": "Message"
+      },
       "btn_title": "Send Message"
     }
   },
+
   "AboutUs": {
     "Heading": {
       "title": "We are a team of content writers who share their learnings",
@@ -138,5 +150,23 @@
       "placeholder": "Search for tag...",
       "btn_title": "Search"
     }
+  },
+  "PrivacyPolicy": {
+    "Heading": {
+      "title": "Privacy Policy",
+      "subtitle": "Last Updated  on 25th August 2024"
+    },
+    "Content": {
+      "title_1": "Lorem ipsum dolor sit amet",
+      "description_1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat.",
+      "title_2": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.",
+      "description_2": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat."
+    }
+  },
+  "Categories": {
+    "business": "Business",
+    "startup": "Startup",
+    "economy": "Economy",
+    "technology": "Technology"
   }
 }

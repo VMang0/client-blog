@@ -2,11 +2,12 @@
 
 import { CategoryHeader } from '@components/sections/category/CategoryHeader';
 import { CategorySection } from '@components/sections/category/CategorySection';
+import { LocaleParamsPropsType } from '@type/params';
 
-const Category = () => (
+const Category = ({ params: { locale } }: LocaleParamsPropsType) => (
   <>
-    <CategoryHeader />
-    <CategorySection />
+    <CategoryHeader locale={locale} />
+    <CategorySection locale={locale} />
   </>
 );
 

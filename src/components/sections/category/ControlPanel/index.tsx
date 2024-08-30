@@ -1,4 +1,4 @@
-import { useTranslations } from 'next-intl';
+import { useLocale, useTranslations } from 'next-intl';
 import { FC } from 'react';
 
 import { CategoryCard } from '@components/CategoryCard';
@@ -13,12 +13,13 @@ import style from './style.module.scss';
 
 export const ControlPanel: FC<ControlPanelPropsType> = ({ activeTag, onTagClick, selectedCategory }) => {
   const trControlPanel = useTranslations('Category');
+  const locale = useLocale();
 
   const handleTagClick = (tag: TagType) => () => onTagClick(tag);
 
   return (
     <div className={style.control_panel}>
-      <ElasticSearch />
+      <ElasticSearch locale={locale} />
       <div className={style.control_panel__block}>
         <h2>{trControlPanel('categoriesTitle')}</h2>
         <ul className={style.control_panel__categories}>

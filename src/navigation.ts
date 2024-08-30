@@ -13,7 +13,7 @@ export const pathnames = {
 
 export const localePrefix: LocalePrefix<typeof Locales> = 'always';
 
-export const { Link } = createLocalizedPathnamesNavigation({
+export const { Link, useRouter, usePathname, getPathname } = createLocalizedPathnamesNavigation({
   locales: Locales,
   pathnames,
   localePrefix,

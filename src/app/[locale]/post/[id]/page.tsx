@@ -1,22 +1,23 @@
 import { FC } from 'react';
 
-import { getPostById } from '@api/post/getPostById';
-import { getPostsByCategory } from '@api/post/getPostsByCategory';
 import { JoinSection } from '@components/JoinSection';
 import { PostInformation } from '@components/sections/post/PostInformation';
 import { ReadNextPosts } from '@components/sections/post/ReadNextPosts';
-import { IdParamsPropsType } from '@type/params';
+import { useApiWithLocale } from '@hooks/useApiWithLocale';
+import { IdLocaleParamsPropsType } from '@type/params';
 
-const Post: FC<IdParamsPropsType> = async ({ params }) => {
-  const { id } = params;
+const Post: FC<IdLocaleParamsPropsType> = async ({ params }) => {
+  const { id, locale } = params;
+  const { fetchPostById, fetchPostsByCategory, fetchAuthorById } = useApiWithLocale(locale);
 
-  const post = await getPostById(id);
-  const readNextPosts = await getPostsByCategory(post.category, post.id);
+  const post = await fetchPostById(id);
+  const readNextPosts = await fetchPostsByCategory(post.category, post.id);
+  const author = await fetchAuthorById(post.author.id);
 
   return (
     <>
-      <PostInformation post={post} />
-      <ReadNextPosts posts={readNextPosts} />
+      <PostInformation post={post} authorImage={author.image} />
+      {readNextPosts.length > 0 && <ReadNextPosts posts={readNextPosts} />}
       <JoinSection />
     </>
   );

@@ -10,6 +10,8 @@ import style from './style.module.scss';
 
 export const HeroPostInfo: FC<PostType & { isHomePage?: boolean }> = memo(({ isHomePage = false, ...post }) => {
   const trHeroPost = useTranslations('Post');
+  const trCategory = useTranslations('Categories');
+
   const { id, title, category, author, createdAt, description } = post;
 
   const titleClassName = classNames({ 'headline-xl': isHomePage });
@@ -22,7 +24,7 @@ export const HeroPostInfo: FC<PostType & { isHomePage?: boolean }> = memo(({ isH
 
   const subTitle = isHomePage ? (
     <>
-      {trHeroPost('postedOn')} <span>{category}</span>
+      {trHeroPost('postedOn')} <span>{trCategory(category)}</span>
     </>
   ) : (
     'Featured Post'

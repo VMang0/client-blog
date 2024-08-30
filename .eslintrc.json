@@ -18,7 +18,8 @@
     "plugin:import/errors",
     "plugin:import/warnings",
     "plugin:import/typescript",
-    "plugin:react-hooks/recommended"
+    "plugin:react-hooks/recommended",
+    "plugin:storybook/recommended"
   ],
   "plugins": [
     "react-refresh",
@@ -104,6 +105,7 @@
     "lines-between-class-members": "off",
     "no-unsafe-optional-chaining": "off",
     "class-methods-use-this": "off",
+    "default-param-last": "off",
     "import/extensions": [
       "error",
       "always",

@@ -1,5 +1,5 @@
-import * as Yup from 'yup';
+import { object, string } from 'yup';
 
-export const emailValidationSchema = Yup.object({
-  email: Yup.string().email('Invalid email address').required(),
+export const emailValidationSchema = object({
+  email: string().email('').required(),
 });

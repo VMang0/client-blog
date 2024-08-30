@@ -7,8 +7,8 @@ import { usePostsPagination } from '@hooks/usePostsPagination';
 
 import style from './style.module.scss';
 
-export const Posts = () => {
-  const { posts, ...paginationProps } = usePostsPagination({});
+export const Posts = ({ locale }: { locale: string }) => {
+  const { posts, ...paginationProps } = usePostsPagination({ locale });
   const trPosts = useTranslations('BlogPosts');
 
   return (

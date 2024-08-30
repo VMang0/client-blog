@@ -4,6 +4,7 @@ import classNames from 'classnames';
 import { useCallback, useState } from 'react';
 
 import { BurgerButton } from '@components/Header/components/BurgerButton';
+import { SwitchLocale } from '@components/Header/components/SwitchLocale';
 import { VideoButton } from '@components/Header/components/VideoButton';
 import { Logo } from '@components/Logo';
 import { Navbar } from '@components/Navbar';
@@ -30,6 +31,7 @@ export const Header = () => {
           <Logo />
         </div>
         <div className={NavbarClassName}>
+          <SwitchLocale />
           <Navbar />
           <VideoButton handleClick={handleVideoButtonClick} />
         </div>

@@ -11,11 +11,11 @@ import { useElasticSearch } from '@hooks/useElasticSearch';
 
 import style from './style.module.scss';
 
-export const ElasticSearch = () => {
-  const elasticRef = useRef<HTMLDivElement>(null);
+export const ElasticSearch = ({ locale }: { locale: string }) => {
+  const elasticRef = useRef<HTMLDivElement | null>(null);
   const trInput = useTranslations('Category.Input');
   const { searchQuery, handleSearchChange, handleSearch, hideSearch, isSearchingActive, isLoading, posts } =
-    useElasticSearch();
+    useElasticSearch(locale);
 
   useClickOutside(elasticRef, hideSearch);
 
