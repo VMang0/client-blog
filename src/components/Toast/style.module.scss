@@ -1,0 +1,32 @@
+.toast {
+  position: fixed;
+  bottom: $space-16;
+  right: $space-16;
+
+  display: flex;
+  align-items: center;
+  gap: $gap-16;
+
+  padding: $space-16 $space-24;
+  border-radius: $radios-10;
+  color: $white-secondary;
+  font-size: $font-size-16;
+}
+
+.success {
+  background-color: $toast-success;
+}
+
+.error {
+  background-color: $toast-error;
+}
+
+.toast_icon {
+  background-color: #{$toast-success}20;
+  padding: $space-10;
+}
+
+.toast_message {
+  display: flex;
+  align-items: center;
+}

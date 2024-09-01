@@ -1,0 +1,32 @@
+.switcher {
+  top: 85%;
+  left: 0;
+
+  position: fixed;
+  z-index: 5;
+
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: $gap-16;
+
+  padding: $space-10;
+  background-color: $yellow-secondary;
+  box-shadow: 0 3px 6px $gray-primary;
+}
+
+.switcher_btn {
+  cursor: pointer;
+  border: none;
+
+  font-weight: 600;
+  color: $gray-primary;
+  font-size: $font-size-14;
+  background-color: transparent;
+
+  &:disabled {
+    cursor: not-allowed;
+    font-size: $font-size-18;
+    color: $white-secondary;
+  }
+}

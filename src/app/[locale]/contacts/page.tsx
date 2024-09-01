@@ -6,6 +6,8 @@ import { Heading } from '@components/sections/contacts/Heading';
 
 import style from './style.module.scss';
 
+export const revalidate = 3600;
+
 const MapComponent = dynamic(() => import(`../../../components/Map`), { ssr: false });
 
 const Contacts = () => {

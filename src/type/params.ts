@@ -10,9 +10,3 @@ export type IdLocaleParamsPropsType = {
     locale: string;
   };
 };
-
-export type CategoryParamsPropsType = {
-  params: {
-    category: string;
-  };
-};

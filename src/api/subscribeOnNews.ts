@@ -16,14 +16,7 @@ const subscribeTemplate = Env.EMAILJS_SUBSCRIBE_TEMPLATE_ID || '';
 const subscribeService = Env.EMAILJS_SERVICE_ID || '';
 
 export const subscribeOnNews = async ({ email }: SubscribeOnNewsParamsType) => {
-  await emailjs
-    .send(subscribeService, subscribeTemplate, { email }, publicKey)
-    .then((response: ResponseType) => {
-      if (response.status === 200) {
-        /* empty */
-      }
-    })
-    .catch((e: ResponseType) => {
-      throw new Error(e.text);
-    });
+  await emailjs.send(subscribeService, subscribeTemplate, { email }, publicKey).catch((e: ResponseType) => {
+    throw new Error(e.text);
+  });
 };

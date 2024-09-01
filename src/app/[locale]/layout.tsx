@@ -6,6 +6,7 @@ import { FC } from 'react';
 import { RootLayoutPropsType } from '@app/[locale]/type';
 import { Footer } from '@components/Footer';
 import { Header } from '@components/Header';
+import { SwitcherLocale } from '@components/SwitcherLocale';
 import { inter } from '@styles/fonts';
 
 import '@styles/globals.scss';
@@ -24,7 +25,10 @@ const RootLayout: FC<RootLayoutPropsType> = async ({ children, params: { locale 
         <NextIntlClientProvider locale={locale} messages={messages}>
           <div id="root">
             <Header />
-            <main>{children}</main>
+            <main>
+              <SwitcherLocale />
+              {children}
+            </main>
             <Footer />
           </div>
         </NextIntlClientProvider>

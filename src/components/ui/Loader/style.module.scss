@@ -4,11 +4,12 @@
   align-items: center;
   height: 100%;
   width: 100%;
+  min-height: $size-296;
 }
 
 .loader {
-  width: 35px;
-  height: 35px;
+  width: 80px;
+  height: 80px;
   border-radius: 50%;
   position: relative;
   animation: rotate 1s linear infinite;

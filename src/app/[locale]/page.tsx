@@ -11,6 +11,8 @@ import { WhyWeStarted } from '@components/sections/home/WhyWeStarted';
 import { useApiWithLocale } from '@hooks/useApiWithLocale';
 import { LocaleParamsPropsType } from '@type/params';
 
+export const revalidate = 3600;
+
 const Home = async ({ params: { locale } }: LocaleParamsPropsType) => {
   const { fetchLimitPosts, fetchLimitAuthors } = useApiWithLocale(locale);
 

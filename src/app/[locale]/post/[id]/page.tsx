@@ -6,6 +6,8 @@ import { ReadNextPosts } from '@components/sections/post/ReadNextPosts';
 import { useApiWithLocale } from '@hooks/useApiWithLocale';
 import { IdLocaleParamsPropsType } from '@type/params';
 
+export const revalidate = 3600;
+
 const Post: FC<IdLocaleParamsPropsType> = async ({ params }) => {
   const { id, locale } = params;
   const { fetchPostById, fetchPostsByCategory, fetchAuthorById } = useApiWithLocale(locale);
