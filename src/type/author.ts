@@ -19,7 +19,3 @@ export type AuthorType = {
 export type AuthorPropsType = {
   author: AuthorType;
 };
-
-export type AuthorsPropsType = {
-  authors: AuthorType[];
-};

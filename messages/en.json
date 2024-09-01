@@ -16,7 +16,9 @@
   "SubscribeForm": {
     "title": "Subscribe to our news letter to get latest updates and news",
     "placeholder": "Enter Your Email",
-    "btn_title": "Subscribe"
+    "btn_title": "Subscribe",
+    "error": "An error has occurred. Try again later!",
+    "success": "The subscription has been successfully completed. Check your email!"
   },
   "Post": {
     "postedOn": "Posted on",
@@ -111,7 +113,9 @@
         "queryRelated": "Query Related",
         "message": "Message"
       },
-      "btn_title": "Send Message"
+      "btn_title": "Send Message",
+      "error": "An error has occurred. Try again later!",
+      "success": "Your message has been accepted for processing!"
     }
   },
 

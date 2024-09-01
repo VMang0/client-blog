@@ -2,6 +2,7 @@
 
 import { useTranslations } from 'next-intl';
 
+import { Toast } from '@components/Toast';
 import { Button } from '@components/ui/Button';
 import { Input } from '@components/ui/Input';
 import { Select } from '@components/ui/Select';
@@ -13,7 +14,7 @@ import style from './style.module.scss';
 
 export const ContactsForm = () => {
   const trForm = useTranslations('ContactsUs.Form');
-  const { handleChange, values, handleSubmit, errors, isSubmitting } = useContactsForm();
+  const { handleChange, values, handleSubmit, errors, isSubmitting, toast, handleCloseToast } = useContactsForm();
 
   return (
     <form className={style.form} onSubmit={handleSubmit}>
@@ -25,7 +26,7 @@ export const ContactsForm = () => {
         isError={!!errors?.name}
         size="large"
       />
-      {errors?.name && <span className={style.error_text}>{errors.name}</span>}
+      {errors?.name && <p className={style.error_text}>{errors.name}</p>}
       <Input
         name="email"
         placeholder={trForm('Placeholders.email')}
@@ -58,6 +59,7 @@ export const ContactsForm = () => {
         type="submit"
         disabled={isSubmitting}
       />
+      {toast && <Toast onClose={handleCloseToast} {...toast} />}
     </form>
   );
 };

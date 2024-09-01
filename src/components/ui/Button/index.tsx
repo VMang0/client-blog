@@ -4,6 +4,7 @@ import { FC } from 'react';
 import { ButtonPropsType } from '@components/ui/Button/type';
 
 import style from './style.module.scss';
+import { DATA_TEST_ID } from '../../../../cypress/e2e/data';
 
 export const Button: FC<ButtonPropsType> = ({
   title,
@@ -20,7 +21,13 @@ export const Button: FC<ButtonPropsType> = ({
   });
 
   return (
-    <button type={type} disabled={disabled} onClick={onClick} className={buttonClassName}>
+    <button
+      type={type}
+      disabled={disabled}
+      onClick={onClick}
+      className={buttonClassName}
+      data-testid={DATA_TEST_ID.BUTTON}
+    >
       {title}
     </button>
   );

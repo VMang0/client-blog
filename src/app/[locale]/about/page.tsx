@@ -5,6 +5,8 @@ import { CommunityDetails } from '@components/sections/about/CommunityDetails';
 import { useApiWithLocale } from '@hooks/useApiWithLocale';
 import { IdLocaleParamsPropsType } from '@type/params';
 
+export const revalidate = 3600;
+
 const AboutUs = async ({ params: { locale } }: IdLocaleParamsPropsType) => {
   const { fetchLimitAuthors } = useApiWithLocale(locale);
 

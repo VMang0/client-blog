@@ -20,11 +20,6 @@ export const sendContactsForm = async ({ email, message, queryRelated, name }: C
       { from_name: name, from_email: email, query_related: queryRelated, message },
       publicKey,
     )
-    .then((response: ResponseType) => {
-      if (response.status === 200) {
-        /* empty */
-      }
-    })
     .catch((e: ResponseType) => {
       throw new Error(e.text);
     });
