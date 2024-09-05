@@ -3,7 +3,7 @@ import EconomyIcon from '@assets/icons/economy.svg';
 import StartupIcon from '@assets/icons/startup.svg';
 import TechnologyIcon from '@assets/icons/technology.svg';
 
-export const Categories = [
+export const categories = [
   {
     name: 'business',
     title: 'Business',

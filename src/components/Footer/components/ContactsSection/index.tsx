@@ -1,6 +1,6 @@
 import Link from 'next/link';
 
-import { ContactsLinks } from '@constants/contactsLinks';
+import { contactsLinks } from '@constants/contactsLinks';
 
 import style from './style.module.scss';
 
@@ -12,7 +12,7 @@ export const ContactsSection = () => (
       <span>Hello@finsweet.com 020 7993 2905</span>
     </div>
     <ul className={style.contacts__links}>
-      {ContactsLinks.map(({ href, Icon }, index) => (
+      {contactsLinks.map(({ href, Icon }, index) => (
         <li key={index}>
           <Link href={href}>
             <Icon />

@@ -3,21 +3,21 @@ import InstagramIcon from '@assets/icons/instagram.svg';
 import LinkedinIcon from '@assets/icons/linkedln.svg';
 import TwitterIcon from '@assets/icons/twitter.svg';
 
-export const contactsLinks = [
+export const authorSocials = [
   {
-    href: '/',
+    name: 'facebook',
     Icon: FacebookIcon,
   },
   {
-    href: '/',
+    name: 'twitter',
     Icon: TwitterIcon,
   },
   {
-    href: '/',
+    name: 'instagram',
     Icon: InstagramIcon,
   },
   {
-    href: '/',
+    name: 'linkedin',
     Icon: LinkedinIcon,
   },
-];
+] as const;

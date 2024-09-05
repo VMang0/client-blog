@@ -1,9 +1,9 @@
 import { createLocalizedPathnamesNavigation } from 'next-intl/navigation';
 import { LocalePrefix, Pathnames } from 'next-intl/routing';
 
-import { Locales } from '@constants/locales';
+import { locales } from '@constants/locales';
 
-export const pathnames: Pathnames<typeof Locales> = {
+export const pathnames: Pathnames<typeof locales> = {
   '/': '/',
   '/pathnames': {
     en: '/pathnames',
@@ -11,10 +11,10 @@ export const pathnames: Pathnames<typeof Locales> = {
   },
 };
 
-export const localePrefix: LocalePrefix<typeof Locales> = 'always';
+export const localePrefix: LocalePrefix<typeof locales> = 'always';
 
 export const { Link, useRouter, usePathname } = createLocalizedPathnamesNavigation({
-  locales: Locales,
+  locales,
   pathnames,
   localePrefix,
 });

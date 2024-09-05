@@ -4,4 +4,4 @@ import Logo3 from '@assets/icons/logo_3.svg';
 import Logo4 from '@assets/icons/logo_4.svg';
 import Logo5 from '@assets/icons/logo_5.svg';
 
-export const Logos = [Logo1, Logo2, Logo3, Logo4, Logo5];
+export const logos = [Logo1, Logo2, Logo3, Logo4, Logo5];

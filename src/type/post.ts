@@ -35,6 +35,7 @@ export type UsePostsPaginationPropsType = {
 };
 
 export type UsePostsPaginationReturn = {
+  isLoading: boolean;
   featuredPost: PostType | null;
   posts: PostType[];
   isNextDisabled: boolean;

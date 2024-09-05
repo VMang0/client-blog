@@ -9,7 +9,7 @@ import { getCategoryByName } from '@utils/getCategoryByName';
 export const useFilterPosts = (locale: string) => {
   const { category: categoryName } = useParams<{ category: string }>();
   const [posts, setPosts] = useState<PostType[]>([]);
-  const [isLoading, setIsLoading] = useState(false);
+  const [isLoading, setIsLoading] = useState(true);
   const [activeTag, setActiveTag] = useState<TagType | ''>('');
 
   const { fetchPostsByCategoryAndTag } = useApiWithLocale(locale);

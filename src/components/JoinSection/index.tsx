@@ -9,7 +9,7 @@ export const JoinSection = () => {
   const trJoin = useTranslations('JoinSection');
 
   return (
-    <section className={style.join_section}>
+    <section className={style.join_section} data-testid="section-item">
       <h2>{trJoin('title')}</h2>
       <p>{trJoin('description')}</p>
       <ButtonLink title={trJoin('btn_title')} styleType="primary" href={Routes.ContactUs} />

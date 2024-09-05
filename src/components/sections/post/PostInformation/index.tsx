@@ -4,7 +4,7 @@ import { FC } from 'react';
 
 import { AuthorInfo } from '@components/sections/post/AuthorInfo';
 import { PostInformationPropsType } from '@components/sections/post/PostInformation/type';
-import { Env } from '@constants/env';
+import { env } from '@constants/env';
 
 import style from './style.module.scss';
 
@@ -16,13 +16,13 @@ export const PostInformation: FC<PostInformationPropsType> = ({ post, authorImag
   return (
     <section className={style.post_information}>
       <div className={style.post_information__header}>
-        <AuthorInfo img={authorImage} name={author.name} createdAt={createdAt} />
+        <AuthorInfo img={authorImage} name={author.name} createdAt={createdAt} id={author.id} />
         <h1>{title}</h1>
         <p className={style.post_information__header_category}>{trCategory(category)}</p>
       </div>
       <div className={style.post_information__image}>
         <Image
-          src={`${Env.SERVER_API}${img}`}
+          src={`${env.SERVER_API}${img}`}
           alt={title}
           width={1280}
           height={582}

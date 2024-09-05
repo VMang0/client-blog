@@ -1,7 +1,7 @@
 import profile from '@assets/images/profile.jpg';
 import { CommentType } from '@type/comment';
 
-export const Comments: CommentType[] = [
+export const comments: CommentType[] = [
   {
     image: profile,
     name: 'Jonathan Vallem',

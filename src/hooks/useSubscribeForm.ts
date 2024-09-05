@@ -34,12 +34,8 @@ export const useSubscribeForm = () => {
   };
 
   return {
+    ...formik,
     toast,
     handleCloseToast,
-    handleSubmit: formik.handleSubmit,
-    handleChange: formik.handleChange,
-    values: formik.values,
-    errors: formik.errors,
-    isSubmitting: formik.isSubmitting,
   };
 };

@@ -11,7 +11,7 @@ export const WhyWeStarted = () => {
   const trWhyWeStarted = useTranslations('WhyStartedSection');
 
   return (
-    <section className={style.why_started_container}>
+    <section className={style.why_started_container} data-testid="section-item">
       <div className={style.why_started__image}>
         <Image src={WhyStartedImage} alt="teams" width={900} height={700} />
       </div>

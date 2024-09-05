@@ -1,6 +1,6 @@
 import { Routes } from '@constants/routes';
 
-export const NavLinks = [
+export const navLinks = [
   {
     link: Routes.Home,
     title: 'home',

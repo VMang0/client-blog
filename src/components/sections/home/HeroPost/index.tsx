@@ -6,7 +6,7 @@ import { PostPropsType } from '@type/post';
 import style from './style.module.scss';
 
 export const HeroPost: FC<PostPropsType> = memo(({ post }) => (
-  <div className={style.hero_post}>
+  <div className={style.hero_post} data-testid="section-item">
     <section>
       <HeroPostInfo {...post} isHomePage />
     </section>
