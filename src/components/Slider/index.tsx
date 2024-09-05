@@ -7,7 +7,7 @@ import LeftArrow from '@assets/icons/arrow-left.svg';
 import RightArrow from '@assets/icons/arrow-right.svg';
 import { ControlButton } from '@components/Slider/components/ControlButton';
 import { Slides } from '@components/Slider/components/Slides';
-import { Comments } from '@constants/comments';
+import { comments } from '@constants/comments';
 
 import style from './style.module.scss';
 
@@ -15,7 +15,7 @@ export const Slider = () => {
   const [currentSlideIndex, setCurrentSlideIndex] = useState(0);
 
   const isHasPrevSlide = currentSlideIndex > 0;
-  const isHasNextSlide = currentSlideIndex < Comments.length - 1;
+  const isHasNextSlide = currentSlideIndex < comments.length - 1;
 
   const sliderClassNames = classNames(style.slider_visible, {
     [style.slider_visible__first]: currentSlideIndex === 0,

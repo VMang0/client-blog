@@ -3,7 +3,7 @@
 import { useLocale } from 'next-intl';
 import { useTransition } from 'react';
 
-import { Locales } from '@constants/locales';
+import { locales } from '@constants/locales';
 import { useRouter, usePathname } from '@navigation';
 
 import style from './style.module.scss';
@@ -23,7 +23,7 @@ export const SwitcherLocale = () => {
 
   return (
     <div className={style.switcher}>
-      {Locales.map((locale) => (
+      {locales.map((locale) => (
         <button
           key={locale}
           type="button"

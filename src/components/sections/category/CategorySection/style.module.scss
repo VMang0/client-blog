@@ -1,12 +1,11 @@
 .category_section {
   display: flex;
   justify-content: space-between;
-  gap: $gap-128;
+  gap: $gap-64;
 }
 
 @media (max-width: $device-md) {
   .category_section {
-    gap: $gap-64;
     flex-direction: column-reverse;
   }
 }

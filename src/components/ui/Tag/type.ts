@@ -1,6 +1,6 @@
-import { Tags } from '@constants/tags';
+import { tags } from '@constants/tags';
 
-export type TagType = (typeof Tags)[number];
+export type TagType = (typeof tags)[number];
 
 export type TagPropsType = {
   tagName: TagType;

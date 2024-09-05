@@ -5,7 +5,7 @@ import { FC } from 'react';
 
 import { PostPropsType } from '@components/Post/type';
 import { ButtonLink } from '@components/ui/Button/ButtonLink';
-import { Env } from '@constants/env';
+import { env } from '@constants/env';
 import { Routes } from '@constants/routes';
 import { Link } from '@navigation';
 
@@ -50,7 +50,7 @@ export const Post: FC<PostPropsType> = ({
       {isImageVisible && (
         <div className={postImageClassName}>
           <Image
-            src={`${Env.SERVER_API}${img}`}
+            src={`${env.SERVER_API}${img}`}
             alt={title}
             width={300}
             height={300}

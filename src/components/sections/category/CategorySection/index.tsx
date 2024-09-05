@@ -5,11 +5,11 @@ import { useFilterPosts } from '@hooks/useFilterPosts';
 import style from './style.module.scss';
 
 export const CategorySection = ({ locale }: { locale: string }) => {
-  const { posts, activeTag, onTagClick, category } = useFilterPosts(locale);
+  const { posts, activeTag, onTagClick, category, isLoading } = useFilterPosts(locale);
 
   return (
     <section className={style.category_section}>
-      <PostsList posts={posts} />
+      <PostsList posts={posts} isLoading={isLoading} />
       <ControlPanel activeTag={activeTag} onTagClick={onTagClick} selectedCategory={category.name} />
     </section>
   );

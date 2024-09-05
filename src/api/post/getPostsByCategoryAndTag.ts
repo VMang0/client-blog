@@ -1,8 +1,8 @@
-import { Env } from '@constants/env';
+import { env } from '@constants/env';
 import { PostType } from '@type/post';
 
 export const getPostsByCategoryAndTag = async (category: string, locale = 'en', tag?: string): Promise<PostType[]> => {
-  let url = `${Env.SERVER_API}/api/posts?category=${category}&locale=${locale}`;
+  let url = `${env.SERVER_API}/api/posts?category=${category}&locale=${locale}`;
 
   if (tag) {
     url += `&tags_like=${tag}`;

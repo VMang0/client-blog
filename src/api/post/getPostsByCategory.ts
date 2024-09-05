@@ -1,9 +1,9 @@
-import { Env } from '@constants/env';
+import { env } from '@constants/env';
 import { PostType } from '@type/post';
 
 export const getPostsByCategory = async (category: string, id: string, locale = 'en'): Promise<PostType[]> => {
   const response = await fetch(
-    `${Env.SERVER_API}/api/posts?category=${category}&id_ne=${id}&_limit=3&locale=${locale}`,
+    `${env.SERVER_API}/api/posts?category=${category}&id_ne=${id}&_limit=3&locale=${locale}`,
   );
 
   if (!response.ok) {

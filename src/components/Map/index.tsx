@@ -3,7 +3,7 @@
 import Map, { Marker } from 'react-map-gl';
 
 import MarkerIcon from '@assets/icons/map-marker.svg';
-import { Env } from '@constants/env';
+import { env } from '@constants/env';
 import { mapPoints } from '@constants/mapPoints';
 import 'mapbox-gl/dist/mapbox-gl.css';
 
@@ -18,7 +18,7 @@ const MapComponent = () => (
         zoom: 1.5,
       }}
       mapStyle="mapbox://styles/mapbox/light-v10"
-      mapboxAccessToken={Env.MAPBOX_KEY}
+      mapboxAccessToken={env.MAPBOX_KEY}
     >
       {mapPoints.map((point, index) => (
         <Marker key={index} latitude={point.latitude} longitude={point.longitude} anchor="bottom">

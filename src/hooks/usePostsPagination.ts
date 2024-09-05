@@ -10,6 +10,7 @@ export const usePostsPagination = ({
   locale,
 }: UsePostsPaginationPropsType): UsePostsPaginationReturn => {
   const { fetchLimitPosts } = useApiWithLocale(locale);
+  const [isLoading, setIsLoading] = useState(true);
   const [currentPage, setCurrentPage] = useState<number>(initialPage ?? INITIAL_PAGE);
   const [featuredPost, setFeaturedPost] = useState<PostType | null>(null);
   const [posts, setPosts] = useState<PostType[]>([]);
@@ -17,6 +18,7 @@ export const usePostsPagination = ({
   const [isPrevDisabled, setIsPrevDisabled] = useState(true);
 
   const fetchPosts = async (page: number) => {
+    setIsLoading(true);
     const offset = (page - 1) * limit;
     const fetchedPosts = await fetchLimitPosts(limit, offset);
 
@@ -27,6 +29,8 @@ export const usePostsPagination = ({
     setPosts(fetchedPosts);
     setIsPrevDisabled(page === 1);
     setIsNextDisabled(fetchedPosts.length < limit);
+
+    setIsLoading(false);
   };
 
   const handlePrevClick = useCallback(() => {
@@ -48,6 +52,7 @@ export const usePostsPagination = ({
   }, [currentPage]);
 
   return {
+    isLoading,
     featuredPost,
     posts,
     isNextDisabled,

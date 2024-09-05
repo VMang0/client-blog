@@ -6,7 +6,7 @@ export const CommunityInfo = () => {
   const trInfo = useTranslations('HomeInfoSection');
 
   return (
-    <section>
+    <section data-testid="section-item">
       <AboutCommunity
         isLinkVisible
         linkTitle={trInfo('link_title')}

@@ -7,6 +7,7 @@
 
 .pagination button {
   border: none;
+  cursor: pointer;
   background-color: transparent;
   transition: 0.3s;
 
@@ -17,6 +18,7 @@
   }
 
   &:disabled {
+    cursor: not-allowed;
     color: #{$gray-tertiary}80;
   }
 }

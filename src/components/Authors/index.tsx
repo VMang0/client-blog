@@ -11,7 +11,7 @@ export const Authors: FC<{ authors: AuthorType[] }> = ({ authors }) => {
   const trAuthors = useTranslations('AuthorsSection');
 
   return (
-    <ListContainer title={trAuthors('title')} titleAlign="center" TitleTag="h2">
+    <ListContainer title={trAuthors('title')} titleAlign="center" TitleTag="h2" data-testid="section-item">
       <ul className={style.authors__list}>
         {authors.map((author) => (
           <li key={author.id}>

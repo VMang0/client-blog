@@ -12,7 +12,7 @@ export const Posts: FC<PostsPropsType> = memo(({ posts }) => {
   const trPosts = useTranslations('HomePostsSection');
 
   return (
-    <section className={style.home_posts}>
+    <section className={style.home_posts} data-testid="section-item">
       <div className={style.featured_post_section}>
         <h2>{trPosts('featuredPost')}</h2>
         <Post

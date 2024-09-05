@@ -1,6 +1,6 @@
 import emailjs from '@emailjs/browser';
 
-import { Env } from '@constants/env';
+import { env } from '@constants/env';
 
 type SubscribeOnNewsParamsType = {
   email: string;
@@ -11,9 +11,9 @@ type ResponseType = {
   text: string;
 };
 
-const publicKey = Env.EMAILJS_PUBLIC_KEY || '';
-const subscribeTemplate = Env.EMAILJS_SUBSCRIBE_TEMPLATE_ID || '';
-const subscribeService = Env.EMAILJS_SERVICE_ID || '';
+const publicKey = env.EMAILJS_PUBLIC_KEY || '';
+const subscribeTemplate = env.EMAILJS_SUBSCRIBE_TEMPLATE_ID || '';
+const subscribeService = env.EMAILJS_SERVICE_ID || '';
 
 export const subscribeOnNews = async ({ email }: SubscribeOnNewsParamsType) => {
   await emailjs.send(subscribeService, subscribeTemplate, { email }, publicKey).catch((e: ResponseType) => {
